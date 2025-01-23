@@ -1,0 +1,130 @@
+
+.rain {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 2;
+}
+.rain__drop {
+  animation-delay: calc(var(--d) * 1s);
+  animation-duration: calc(var(--a) * 1s);
+  animation-iteration-count: infinite;
+  animation-name: drop;
+  animation-timing-function: linear;
+  height: 30px;
+  left: calc(var(--x) * 1%);
+  position: absolute;
+  top: calc((var(--y) + 50) * -1px);
+
+  path {
+    fill: #a1c6cc;
+    opacity: var(--o);
+    transform: scaleY(calc(var(--s) * 1.5));
+  }
+}
+
+.snow__flake {
+  animation-delay: calc(var(--d) * 5s);
+  animation-duration: calc(var(--a) * 1s);
+  animation-iteration-count: infinite;
+  animation-name: snow-fall;
+  animation-timing-function: linear;
+  height: 30px;
+  position: absolute;
+  left: calc(var(--x) * 1%);
+  top: calc((var(--y) + 50) * -1px);
+  opacity: var(--o);
+}
+
+
+
+@keyframes drop {
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+}
+
+
+.lightning {
+  background-color: rgba(255, 255, 255, 0);
+  animation: lightning 20s ease-in-out infinite;
+}
+
+@keyframes lightning {
+  0% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  6.25% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  8% {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  9% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  11% {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  30% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  100% {
+    background-color: rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes snow-fall {
+  0% {
+    top: -10%;
+    transform: translateX(0%);
+  }
+  9% {
+    top: 0%;
+  }
+  18% {
+    top: 10%;
+    transform: translateX(-30%);
+  }
+  27% {
+    top: 20%;
+    transform: translateX(0%);
+  }
+  36% {
+    top: 30%;
+    transform: translateX(30%);
+  }
+  45% {
+    top: 40%;
+    transform: translateX(0%);
+  }
+  54% {
+    top: 50%;
+    transform: translateX(-30%);
+  }
+  63% {
+    top: 60%;
+    transform: translateX(0%);
+  }
+  72% {
+    top: 70%;
+    transform: translateX(30%);
+  }
+  81% {
+    top: 80%;
+    transform: translateX(0%);
+  }
+  90% {
+    top: 90%;
+    transform: translateX(-30%);
+  }
+  100% {
+    top: 100%;
+    transform: translateX(10%)
+  }
+}

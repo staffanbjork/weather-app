@@ -1,0 +1,36 @@
+.widget-title {
+  text-wrap: wrap;
+  overflow-wrap: break-word;
+  @include font-size(1.3rem);
+  @include media-breakpoint-only(xs){
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+// .wind-widget-wind-direction {
+//   @include media-breakpoint-only(xs){
+//     font-size: 2rem;
+//     margin-block: auto;
+//   }
+//   @include media-breakpoint-only(sm){
+//     font-size: 3.3rem;
+//     margin-block: auto;
+//   }
+// }
+// .wind-widget-values {
+//   @include media-breakpoint-only(xs){
+//     font-size: 1.5rem;
+//   }
+//   @include media-breakpoint-only(sm){
+//     font-size: 2.2rem;
+//   }
+//   @include media-breakpoint-only(md){
+//     font-size: 1.2rem;
+//   }
+//   @include media-breakpoint-only(lg){
+//     font-size: 1.1rem;
+//   }
+//   @include media-breakpoint-up(xl){
+//     font-size: 1.2rem;
+//   }
+// }

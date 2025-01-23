@@ -1,0 +1,26 @@
+
+$text: #F0F8FF;
+$background: #0d0e12;
+$primary: rgba(170, 205, 255, 0.5);
+$secondary: #51425c;
+$accent: #a487a8;
+
+
+$linearPrimarySecondary: linear-gradient(#b0b3c6, #51425c);
+$linearPrimaryAccent: linear-gradient(#b0b3c6, #a487a8);
+$linearSecondaryAccent: linear-gradient(#51425c, #a487a8);
+$radialPrimarySecondary: radial-gradient(#b0b3c6, #51425c);
+$radialPrimaryAccent: radial-gradient(#b0b3c6, #a487a8);
+$radialSecondaryAccent: radial-gradient(#51425c, #a487a8);
+
+$light-text: #0f1015;
+$light-background: #edeef2;
+$light-primary: #3a3d50;
+$light-secondary: #b2a3bd;
+$light-accent: #755879;
+
+
+$body-color: $text;
+$body-bg: $background;
+$body-secondary-bg: $primary;
+$body-tertiary-bg: $secondary;
