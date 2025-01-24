@@ -32,3 +32,7 @@ Performance is probably the biggest drawback of this project, the interactive ba
 - [Vanta](https://www.npmjs.com/package/vanta)
 - [THREE](https://www.npmjs.com/package/three)
 
+## Run
+```
+npm install
+npm start
